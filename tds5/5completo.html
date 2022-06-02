@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1completo</title>
+</head>
+
+<body>
+    <script>
+
+        function functionCompleto5() {
+            var switchCompleto5 = prompt("Digite 1 para for, digite 2 para while e digite 3 para do while.")
+
+            switch (switchCompleto5) {
+
+                case "1":
+                    function for5() {
+                        var primeiro1 = 1;
+                        var ultimo1 = 20;
+                        var primeiro2 = 1;
+                        var ultimo2 = 20;
+
+                        var result1 = "";
+                        var result2 = "";
+
+                        for (primeiro1; primeiro1 <= ultimo1; primeiro1++) {
+                            result1 = result1 + " " + primeiro1
+                        }
+
+
+                        for (primeiro2; primeiro2 <= ultimo2; primeiro2++) {
+                            result2 = result2 + "\n" + primeiro2
+                        }
+
+                        alert(result1 + "\n" + result2)
+
+                        return for5
+                    }
+                    console.log(for5())
+                    break
+
+                case "2":
+                    function while5() {
+                        var primeiro1 = 0;
+                        var ultimo1 = 20;
+                        var primeiro2 = 0;
+                        var ultimo2 = 20;
+
+                        var result1 = "";
+                        var result2 = "";
+
+                        while (primeiro1 < ultimo1) {
+                            primeiro1++
+                            result1 = result1 + " " + primeiro1
+                        }
+
+                        while (primeiro2 < ultimo2) {
+                            primeiro2++
+                            result2 = result2 + "\n" + primeiro2
+                        }
+
+                        alert(result1 + "\n" + result2)
+
+                        return while5
+                    }
+                    console.log(while5())
+                    break
+
+                case "3":
+                    function dowhile5() {
+                        var primeiro1 = 0;
+                        var ultimo1 = 20;
+                        var primeiro2 = 0;
+                        var ultimo2 = 20;
+
+                        var result1 = "";
+                        var result2 = "";
+
+                        do {
+                            primeiro1++
+                            result1 = result1 + " " + primeiro1
+                        } while (primeiro1 < ultimo1)
+
+                        do {
+                            primeiro2++
+                            result2 = result2 + "\n" + primeiro2
+                        } while (primeiro2 < ultimo2)
+
+                        alert(result1 + "\n" + result2)
+
+
+                        return dowhile5
+                    }
+                    console.log(dowhile5())
+                    break
+
+                default:
+                    alert("Erro")
+
+            }
+        }
+
+        function recomeco5() {
+            while (confirm("Vamos recomeçar?")) {
+                console.log(functionCompleto5())
+            }
+        }
+
+        console.log(functionCompleto5())
+        console.log(recomeco5())
+
+    </script>
+</body>
+
+</html>

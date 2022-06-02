@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex4dowhile</title>
+</head>
+
+<body>
+
+    <script>
+
+        function ex4dowhile() {
+            alert("O programa calcula a quantidade de anos necessários para o país A ultrapassar o país B em população")
+
+            var a = parseInt(prompt("Digite a população do país A:"));
+            var aTaxa = parseFloat(prompt("Digite a taxa de crescimento (Ex.: 3% = 0.03):"));
+
+            var b = parseInt(prompt("Digite a população do país B:"));
+            var bTaxa = parseFloat(prompt("Digite a taxa de crescimento (Ex.: 3% = 0.03)"));
+
+            var i = 0;
+
+            do {
+                i++
+                var a = a + (a * aTaxa);
+                var b = b + (b * bTaxa);
+            } while (a < b)
+            alert("São necessários " + i + " anos para o país A ultrapassar a população do país B"
+                + "\n" + "\n" + "População país A: " + a + "\n" + "População país B: " + b)
+        }
+
+        console.log(ex4dowhile())
+
+        while (confirm("Vamos recomeçar?")) {
+            console.log(ex4dowhile())
+        }
+
+    </script>
+</body>
+
+</html>

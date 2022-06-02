@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex2for</title>
+</head>
+
+<body>
+    <script>
+
+        var nome = (prompt("Digite seu nome:"));
+        for (var i; nome.length < 3; i++) {
+            alert ("Erro")
+            nome = (prompt("Digite seu nome:"));
+        }
+        alert ("Nome válido")
+
+        var idade = parseInt(prompt("Digite sua idade:"));
+        for (var i; idade < 0 || idade > 150; i++) {
+            alert ("Erro")
+            idade = parseInt(prompt("Digite sua idade:"));
+        }
+        alert ("Idade válida")
+
+        var salario = (prompt("Digite seu salário:"));
+        for (var i; salario < 0; i++) {
+            alert ("Erro")
+            salario = (prompt("Digite seu salário:"));
+        }
+        alert ("Salário válido")
+
+
+        var sexo = (prompt("Digite seu sexo (f ou m):"));
+        for (var i; sexo != "f" && sexo != "m"; i++) {
+            alert("Erro")
+            sexo = (prompt("Digite seu sexo (f ou m):"));
+        }
+        alert ("Sexo válido")
+
+        var ec = (prompt("Digite seu estado civil (s, c, v ou d):"));
+        for (var i; ec != "s" && ec != "c" && ec != "v" && ec != "d"; i++) {
+            alert("Erro")
+            ec = (prompt("Digite seu estado civil (s, c, v ou d):"));
+        }
+        alert ("Estado Civil válido")
+
+    </script>
+</body>
+
+</html>

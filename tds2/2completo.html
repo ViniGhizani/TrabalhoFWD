@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2completo</title>
+</head>
+
+<body>
+    <script>
+
+        function functionCompleto2() {
+            var switchCompleto2 = prompt("Digite 1 para for, digite 2 para while e digite 3 para do while.")
+
+            switch (switchCompleto2) {
+
+                case "1":
+                    function for2() {
+                        var nome = (prompt("Digite seu nome:"));
+                        for (var i; nome.length < 3; i++) {
+                            alert("Erro")
+                            nome = (prompt("Digite seu nome:"));
+                        }
+                        alert("Nome válido")
+
+                        var idade = parseInt(prompt("Digite sua idade:"));
+                        for (var i; idade < 0 || idade > 150; i++) {
+                            alert("Erro")
+                            idade = parseInt(prompt("Digite sua idade:"));
+                        }
+                        alert("Idade válida")
+
+                        var salario = (prompt("Digite seu salário:"));
+                        for (var i; salario < 0; i++) {
+                            alert("Erro")
+                            salario = (prompt("Digite seu salário:"));
+                        }
+                        alert("Salário válido")
+
+
+                        var sexo = (prompt("Digite seu sexo (f ou m):"));
+                        for (var i; sexo != "f" && sexo != "m"; i++) {
+                            alert("Erro")
+                            sexo = (prompt("Digite seu sexo (f ou m):"));
+                        }
+                        alert("Sexo válido")
+
+                        var ec = (prompt("Digite seu estado civil (s, c, v ou d):"));
+                        for (var i; ec != "s" && ec != "c" && ec != "v" && ec != "d"; i++) {
+                            alert("Erro")
+                            ec = (prompt("Digite seu estado civil (s, c, v ou d):"));
+                        }
+                        alert("Estado Civil válido")
+                        return for2
+                    }
+                    console.log(for2())
+                    break
+
+                case "2":
+                    function while2() {
+                        var nome = (prompt("Digite seu nome:"));
+                        var i = 0
+
+                        while (nome.length < 3) {
+                            i++
+                            alert("Erro")
+                            nome = (prompt("Digite seu nome:"));
+                        }
+                        alert("Nome válido")
+
+                        var idade = parseInt(prompt("Digite sua idade:"));
+                        while (idade < 0 || idade > 150) {
+                            i++
+                            alert("Erro")
+                            idade = parseInt(prompt("Digite sua idade:"));
+                        }
+                        alert("Idade válida")
+
+                        var salario = (prompt("Digite seu salário:"));
+                        while (salario < 0) {
+                            i++
+                            alert("Erro")
+                            salario = (prompt("Digite seu salário:"));
+                        }
+                        alert("Salário válido")
+
+                        var sexo = (prompt("Digite seu sexo (f ou m):"));
+                        while (sexo != "f" && sexo != "m") {
+                            i++
+                            alert("Erro")
+                            sexo = (prompt("Digite seu sexo (f ou m):"));
+                        }
+                        alert("Sexo válido")
+
+                        var ec = (prompt("Digite seu estado civil (s, c, v ou d):"));
+                        while (ec != "s" && ec != "c" && ec != "v" && ec != "d") {
+                            i++
+                            alert("Erro")
+                            ec = (prompt("Digite seu estado civil (s, c, v ou d):"));
+                        }
+                        alert("Estado Civil válido")
+
+                        return while2
+                    }
+                    console.log(while2())
+                    break
+
+                case "3":
+                    function dowhile2() {
+                        do {
+                            var nome = (prompt("Digite seu nome:"));
+
+                            if (nome.length <= 3) {
+                                alert("Erro")
+                                var ok = true
+                            } else {
+                                var ok = false
+                            }
+
+                        } while (ok == true)
+                        alert("Nome válido")
+
+
+                        do {
+                            var idade = parseInt(prompt("Digite sua idade:"));
+
+                            if (idade < 0 || idade > 150) {
+                                alert("Erro")
+                                var ok = true
+                            } else {
+                                var ok = false
+                            }
+
+                        } while (ok == true)
+                        alert("Idade válida")
+
+
+                        do {
+                            var salario = (prompt("Digite seu salário:"));
+
+                            if (salario < 0) {
+                                alert("Erro")
+                                var ok = true
+                            } else {
+                                var ok = false
+                            }
+
+                        } while (ok == true)
+                        alert("Salário válido")
+
+
+                        do {
+                            var sexo = (prompt("Digite seu sexo (f ou m):"));
+
+                            if (sexo != "f" && sexo != "m") {
+                                alert("Erro")
+                                var ok = true
+                            } else {
+                                var ok = false
+                            }
+
+                        } while (ok == true)
+                        alert("Sexo válido")
+
+
+                        do {
+                            var ec = (prompt("Digite seu estado civil (s, c, v ou d):"));
+
+                            if (ec != "s" && ec != "c" && ec != "v" && ec != "d") {
+                                alert("Erro")
+                                var ok = true
+                            } else {
+                                var ok = false
+                            }
+
+                        } while (ok == true)
+                        alert("Estado Civil válido")
+                        return dowhile2
+                    }
+                    console.log(dowhile2())
+                    break
+
+                default:
+                    alert("Erro")
+
+            }
+        }
+
+        function recomeco2() {
+            while (confirm("Vamos recomeçar?")) {
+                console.log(functionCompleto2())
+            }
+        }
+
+        console.log(functionCompleto2())
+        console.log(recomeco2())
+
+    </script>
+</body>
+
+</html>

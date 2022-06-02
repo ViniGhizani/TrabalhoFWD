@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1completo</title>
+</head>
+
+<body>
+    <script>
+
+        function functionCompleto1() {
+            var switchCompleto1 = prompt("Digite 1 para for, digite 2 para while e digite 3 para do while.")
+
+            switch (switchCompleto1) {
+
+                case "1":
+                    function for1() {
+                        var nome = (prompt("Digite seu nome:"));
+                        var senha = (prompt("Digite sua senha:"));
+                        for (var i = 1; nome == senha; i++) {
+                            alert("Erro")
+                            nome = prompt("Digite seu nome:")
+                            senha = prompt("Digite sua senha:")
+                        }
+                        alert("Sucesso")
+                        return for1
+                    }
+                    console.log(for1())
+                    break
+
+                case "2":
+                    function while1() {
+                        var nome = (prompt("Digite seu nome:"));
+                        var senha = (prompt("Digite sua senha:"));
+                        var i = 0
+                        while (nome == senha) {
+                            i++
+                            alert("Erro")
+                            nome = prompt("Digite seu nome:")
+                            senha = prompt("Digite sua senha:")
+                        }
+                        alert("Sucesso")
+                        return while1
+                    }
+                    console.log(while1())
+                    break
+
+                case "3":
+                    function dowhile1() {
+                        do {
+                            var nome = (prompt("Digite seu nome:"));
+                            var senha = (prompt("Digite sua senha:"));
+
+                            if (nome == senha) {
+                                alert("Erro")
+                                var ok = true
+                            } else {
+                                var ok = false
+                            }
+                        } while (ok == true)
+                        alert("Sucesso")
+
+                        return dowhile1
+                    }
+                    console.log(dowhile1())
+                    break
+
+                default:
+                    alert("Erro")
+
+            }
+        }
+
+        function recomeco1() {
+            while (confirm("Vamos recomeçar?")) {
+                console.log(functionCompleto1())
+            }
+        }
+
+        console.log(functionCompleto1())
+        console.log(recomeco1())
+
+    </script>
+</body>
+
+</html>

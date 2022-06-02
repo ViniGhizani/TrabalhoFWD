@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex3for</title>
+</head>
+
+<body>
+
+    <script>
+
+        var a = 8000;
+        var aTaxa = 0.06;
+        
+        var b = 20000;
+        var bTaxa = 0.03;
+
+        for (var i = 0; a < b; i++) {
+            var a = a + (a * aTaxa);
+            var b = b + (b * bTaxa);
+        }
+        alert("São necessários " + i + " anos para o país A ultrapassar a população do país B"
+        + "\n" + "\n" + "População país A: " + a + "\n" + "População país B: " + b) 
+
+    </script>
+</body>
+
+</html>

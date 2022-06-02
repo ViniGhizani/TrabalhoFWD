@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4completo</title>
+</head>
+
+<body>
+    <script>
+
+        function functionCompleto4() {
+            var switchCompleto4 = prompt("Digite 1 para for, digite 2 para while e digite 3 para do while.")
+
+            switch (switchCompleto4) {
+
+                case "1":
+                    function for4() {
+                        alert("O programa calcula a quantidade de anos necessários para o país A ultrapassar o país B em população")
+
+                        var a = parseInt(prompt("Digite a população do país A:"));
+                        var aTaxa = parseFloat(prompt("Digite a taxa de crescimento (Ex.: 3% = 0.03):"));
+
+                        var b = parseInt(prompt("Digite a população do país B:"));
+                        var bTaxa = parseFloat(prompt("Digite a taxa de crescimento (Ex.: 3% = 0.03)"));
+
+                        for (var i = 0; a < b; i++) {
+                            var a = a + (a * aTaxa);
+                            var b = b + (b * bTaxa);
+                        }
+                        alert("São necessários " + i + " anos para o país A ultrapassar a população do país B"
+                            + "\n" + "\n" + "População país A: " + a + "\n" + "População país B: " + b)
+
+                        return for4
+                    }
+                    console.log(for4())
+                    break
+
+                case "2":
+                    function while4() {
+                        alert("O programa calcula a quantidade de anos necessários para o país A ultrapassar o país B em população")
+
+                        var a = parseInt(prompt("Digite a população do país A:"));
+                        var aTaxa = parseFloat(prompt("Digite a taxa de crescimento (Ex.: 3% = 0.03):"));
+
+                        var b = parseInt(prompt("Digite a população do país B:"));
+                        var bTaxa = parseFloat(prompt("Digite a taxa de crescimento (Ex.: 3% = 0.03)"));
+
+                        var i = 0;
+
+                        while (a < b) {
+                            i++
+                            var a = a + (a * aTaxa);
+                            var b = b + (b * bTaxa);
+                        }
+                        alert("São necessários " + i + " anos para o país A ultrapassar a população do país B"
+                            + "\n" + "\n" + "População país A: " + a + "\n" + "População país B: " + b)
+
+                        return while4
+                    }
+                    console.log(while4())
+                    break
+
+                case "3":
+                    function dowhile4() {
+                        alert("O programa calcula a quantidade de anos necessários para o país A ultrapassar o país B em população")
+
+                        var a = parseInt(prompt("Digite a população do país A:"));
+                        var aTaxa = parseFloat(prompt("Digite a taxa de crescimento (Ex.: 3% = 0.03):"));
+
+                        var b = parseInt(prompt("Digite a população do país B:"));
+                        var bTaxa = parseFloat(prompt("Digite a taxa de crescimento (Ex.: 3% = 0.03)"));
+
+                        var i = 0;
+
+                        do {
+                            i++
+                            var a = a + (a * aTaxa);
+                            var b = b + (b * bTaxa);
+                        } while (a < b)
+                        alert("São necessários " + i + " anos para o país A ultrapassar a população do país B"
+                            + "\n" + "\n" + "População país A: " + a + "\n" + "População país B: " + b)
+
+                        return dowhile4
+                    }
+                    console.log(dowhile4())
+                    break
+
+                default:
+                    alert("Erro")
+
+            }
+        }
+
+        function recomeco4() {
+            while (confirm("Vamos recomeçar?")) {
+                console.log(functionCompleto4())
+            }
+        }
+
+        console.log(functionCompleto4())
+        console.log(recomeco4())
+
+    </script>
+</body>
+
+</html>
